@@ -11,12 +11,12 @@ import sys
 #     with open(input_file_path, 'w') as f:
 #         f.write(requests.get(data_url).text)
 
-if sys.argv is None or len(sys.argv) > 1:
+if sys.argv is None or len(sys.argv) > 2:
     print("Usage:\n")
     print("$ python prepare.py <file.txt>")
     sys.exit()
 
-input_file_path = os.path.join(os.path.dirname(__file__), sys.argv[0])
+input_file_path = os.path.join(os.path.dirname(__file__), sys.argv[1])
 with open(input_file_path, 'r') as f:
     data = f.read()
 print(f"length of dataset in characters: {len(data):,}")
