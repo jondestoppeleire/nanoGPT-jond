@@ -19,7 +19,7 @@ import sys
 
 if sys.argv is None or len(sys.argv) > 1:
     print("Usage:\n")
-    print("$ python prepare.py <file.txt>")
+    print("$ python prepare-char.py <file.txt>")
     sys.exit()
 
 input_file_path = os.path.join(os.path.dirname(__file__), sys.argv[0])
