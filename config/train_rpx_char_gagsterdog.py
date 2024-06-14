@@ -1,7 +1,7 @@
 # train a miniature character-level shakespeare model
 # good for debugging and playing on macbooks and such
 
-dataset = 'data/discord-transcripts/gagsterdog/nano'
+dataset = 'data/discord-transcripts/gagsterdog/nano-char'
 out_dir = dataset + '/model'
 
 eval_interval = 250 # keep frequent because we'll overfit
@@ -12,7 +12,7 @@ log_interval = 10 # don't print too too often
 always_save_checkpoint = False
 
 wandb_log = False # override via command line if you like
-wandb_project = 'gagsterdog-char'
+wandb_project = 'nano-gagsterdog-char'
 wandb_run_name = 'mini-gpt'
 
 gradient_accumulation_steps = 1
