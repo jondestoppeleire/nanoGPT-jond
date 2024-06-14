@@ -1,7 +1,7 @@
 # train a miniature character-level shakespeare model
 # good for debugging and playing on macbooks and such
 
-dataset = 'data/discord-transcripts/gagsterdog/nano'
+dataset = 'discord-transcripts/gagsterdog/nano'
 out_dir = dataset + '/model'
 
 eval_interval = 250 # keep frequent because we'll overfit
